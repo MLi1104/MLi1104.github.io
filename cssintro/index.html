@@ -6,17 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Intro</title>
+    <style>
+        body {
+            background-color: rgb(245, 235, 210);
+        }
+        
+        #blue-text {
+            color: blue;
+        }
+        
+        #red-text {
+            color: crimson;
+        }
+        
+        .small-text {
+            font-size: xx-small;
+        }
+        
+        .multi-text {
+            color: orange;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .christmas {
+            color: red;
+            text-align: center;
+        }
+        
+        .large-green {
+            font-size: 60px;
+            color: seagreen;
+        }
+        
+        h1 {
+            border: 3px solid cornflowerblue;
+        }
+    </style>
 </head>
 
 <body>
     <h1>This website will demonstrate different ways I can use style</h1>
-    <h2>Do you remember how to use style?</h2>
+    <h2>Inline CSS demo</h2>
     <p style="color:rgb(55, 55, 175);">I want this text to be blue</p>
     <p style="color:crimson;">I want this text to be red</p>
     <p style="font-size: 50px;">I want this text to be really big</p>
     <p style="font-size: 10px">I want this text to be really small</p>
     <p style="color:orange; font-size: 24px; text-align: center;">I want this text to be orange, 24px, and centered</p>
 
+    <!--IDs can distinguish tags but they have to be unique-->
+    <h1>Internal CSS demo</h1>
+    <p id="blue-text">I want this text to be blue</p>
+    <p id="red-text">I want this text to be red</p>
+    <p class="small-text">I want this text to be really small</p>
+    <p class="small-text">I want this text to be really small</p>
+    <p class="multi-text">I want this text to be orange, 24px, and centered</p>
+
+    <div class="christmas">
+        <h2>This is how we use divs and spans</h2>
+        <h3>This header is part of a div</h3>
+        <p>This paragraph is part of a div</p>
+        <p>so is this one</p>
+        <p>This <span class="large-green">word</span> and this <span class="large-green">word</span> will be different</p>
+    </div>
 </body>
 
 </html>
