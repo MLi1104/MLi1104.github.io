@@ -1,0 +1,30 @@
+body {
+    background-color: cornsilk;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: peachpuff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* list items inside unordered lists with class nav*/
+
+ul.nav li {
+    float: left;
+    /*this makes sure that menu goes horizontally*/
+}
+
+
+/* <a> inside list items inside unordered lists with class nav*/
+
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    /*padding around the text in menu*/
+    color: black;
+    text-decoration: none;
+}
