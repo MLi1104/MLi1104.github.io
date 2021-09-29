@@ -28,3 +28,15 @@ ul.nav li a {
     color: black;
     text-decoration: none;
 }
+
+
+/*this dictates what happens when the mouse is hovering over the menu*/
+
+ul.nav li a:hover {
+    background-color: lightslategray;
+    color: lavenderblush;
+}
+
+.active {
+    background-color: lavender;
+}
