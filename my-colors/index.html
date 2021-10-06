@@ -11,9 +11,53 @@
 
     <!-- CSS starts here-->
     <style>
+        body {
+            background-color: rgb(199, 168, 237);
+        }
+        
         th {
-            color: rgb(235, 164, 72);
+            color: rgb(215, 206, 194);
             text-align: center;
+        }
+        
+        .nav {
+            list-style-type: none;
+            background-color: rgb(207, 183, 238);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        ul.nav li {
+            float: left;
+            /*this makes sure that menu goes horizontally*/
+        }
+        /*<a> inside list items inside unordered lists with class nav*/
+        
+        ul.nav li a {
+            display: block;
+            padding: 8px 16px;
+            /*padding around the text in menu*/
+            color: black;
+            text-decoration: none;
+        }
+        /*this dictates what happens when the mouse is hovering over the menu*/
+        
+        ul.nav li a:hover {
+            background-color: rgb(167, 61, 233);
+            color: rgb(215, 206, 194);
+        }
+        
+        h1 {
+            color: rgb(105, 88, 233);
+        }
+        
+        h2 {
+            color: rgb(105, 88, 233);
+        }
+        
+        a {
+            color: rgb(215, 206, 194);
         }
     </style>
 </head>
@@ -21,12 +65,14 @@
 <body>
     <h1>Welcome to My Flow</h1>
     <ul class="nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="ranking.html">Ghibli Ranking</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page1.html">Ghibli Ranking</a></li>
+        <li><a href="page2.html">Gallery</a></li>
     </ul>
 
-    <p>Here's some info about my flow: I enjoy painting. Specfically, I have been painting scenes from studio ghibli recently. I enjoy hunting for cool scenes online and recreating them with acrylic!
+    <p>
+        I used the monochromatic color scheme mostly, but added bits of other colors to complement the purple a little better. I think I was trying to using themes of magic and fantasy, but I also wanted to imitate the colors of lavenders and allow the readers
+        to think of flowers when they look at the website. The purples I used also have more red than blue so it creates a cheerful, happy mood while being calm and relaxed.
     </p>
 
     <hr>
@@ -57,6 +103,8 @@
         </tr>
     </table>
 
+    <br>
+    <img src="images/flowers.jpg" alt="flowers" width="30%" height="25%">
     <br>
 
     <h2>Read this Amazing Review on the Movie!</h2>
