@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+</head>
+
+<body>
+    <h1>Let's learn some javascript!</h1>
+
+    <h2>How do we do onclick events and alerts on an anchor?</h2>
+    <!-- alert() creates a pop-up-->
+    <a href="https://www.w3schools.com/js/js_intro.asp" target="_blank" onclick="alert('Warning. You are navigating away from my page')"> JS intro</a>
+    <hr>
+    <br>
+
+    <h2>How do we change HTML with JS with a button?</h2>
+    <p>What is my secret identity?</p>
+    <!--id is v useful in JS bc class can happen multiple times but id only happens once-->
+    <p id="secret"></p>
+    <!--"document here refers to the HTML document"-->
+    <button onclick="document.getElementById('secret').innerHTML ='batman!';document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>How do we change images with JS?</h2>
+    <img src="images/lightbulb1.gif" alt="light off" id="my-image">
+    <button onclick="document.getElementById('my-image').src='images/lightbulb2.gif'">Turn on</button>
+
+    <h2>How do we change css styles with a button?</h2>
+    <p id="alice">Hi, I am Alice</p>
+    <button onclick="document.getElementById('alice').style.fontSize='50px';document.getElementById('alice').style.color='red'">Eat me</button>
+    <button onclick="document.getElementById('alice').style.fontSize='10px';document.getElementById('alice').style.color='black'">Drink me</button>
+
+    <!--here are the new buttons-->
+    <h2>New Buttons Mess Around</h2>
+</body>
+
+</html>
