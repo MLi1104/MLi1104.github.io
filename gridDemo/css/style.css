@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(13, 13, 65);
+    color: snow;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: slategray;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: snow;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: rgb(13, 13, 65);
+    color: snow;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    /*this is the gutters between grid gaps*/
+    padding: 10px;
+}
+
+
+/*the grid-gap is the gap btw grid cells. Padding = space between the things
+in the grid cells (like text) and the sides of the cells*/
+
+.grid-item {
+    background-color: lightsteelblue;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navmenu {
+    grid-column: 1/span 3;
+    /*telling it that there are three columns and the navmenu is the first*/
+    grid-row: 1;
+}
+
+.main-image {
+    grid-column: 1/span 3;
+    grid-row: 2;
+}
+
+.main {
+    grid-column: 1/span 2;
+    grid-row: 3;
+}
+
+.main2 {
+    grid-column: 1/span 2;
+    grid-row: 5;
+}
+
+.sidenav {
+    grid-column: 3;
+    grid-row: 3/span 3;
+    background-color: cornflowerblue;
+}
+
+.support1 {
+    grid-column: 1;
+    grid-row: 4/span 1;
+    background-color: mistyrose;
+}
+
+.support2 {
+    grid-column: 2;
+    grid-row: 4/span 1;
+    background-color: mistyrose;
+}
