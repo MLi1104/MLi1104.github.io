@@ -27,6 +27,7 @@ ul.nav li a:hover {
     grid-gap: 10px;
     /*this is the gutters between grid gaps*/
     padding: 10px;
+    grid-template-columns: auto 14.2857143% 14.2857143% 14.2857143% 14.2857143% 14.2857143% 14.2857143%;
 }
 
 
@@ -34,46 +35,65 @@ ul.nav li a:hover {
 in the grid cells (like text) and the sides of the cells*/
 
 .grid-item {
-    background-color: cornsilk;
     /*this will change!*/
     text-align: center;
-    font-size: 30px;
     padding: 20px;
 }
 
 .navmenu {
-    grid-column: 1/span 3;
+    grid-column: 1/span 7;
     /*telling it that there are three columns and the navmenu is the first*/
     grid-row: 1;
 }
 
-.main-image {
-    grid-column: 1/span 3;
+.title {
+    grid-column: 4;
     grid-row: 2;
 }
 
-.title {
-    grid-column: 1/span 3;
-    grid-row: 2;
+.main-image {
+    grid-column: 1/span 7;
+    grid-row: 3;
+}
+
+.sidenav {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.testimonial {
+    grid-column: 2/span 6;
+    grid-row: 4;
+}
+
+.write {
+    grid-column: 4;
+    grid-row: 5SS;
+}
+
+.read {
+    grid-column: 5;
+    grid-row: 5;
+}
+
+.gallery {
+    grid-column: 2/span 6;
+    grid-row: 6;
+    width: "85.71%";
+}
+
+.sidenav2 {
+    grid-column: 1;
+    grid-row: 6;
 }
 
 
 /*
-.main {
-    grid-column: 1/span 2;
-    grid-row: 3;
-}
 
-.main2 {
-    grid-column: 1/span 2;
-    grid-row: 5;
-}
 
-.sidenav {
-    grid-column: 3;
-    grid-row: 3/span 3;
-    background-color: cornflowerblue;
-}
+
+
+
 
 .support1 {
     grid-column: 1;

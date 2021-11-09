@@ -7,6 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countryside Donut LLC</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        td {
+            width: "33%";
+            height: "33%";
+        }
+        
+        button {
+            background-color: rgb(214, 125, 91);
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,17 +37,120 @@
                 <li><a href=#>Banned List</a></li>
             </ul>
         </div>
+
         <div class="grid-item main-image">
-            <img src="images/cd-main.PNG" alt="main" style="width:100%">
+            <img src="images/cd-main.PNG" alt="main" style="width:80%;height:90%">
         </div>
-        <div class="title" text-align="center">
-            <h1>Countryside Donut LLC</h1>
+
+        <div class="title" style="text-align:center;">
+
+            <button onclick="myFunction()">Menu</button>
+
+            <script>
+                function myFunction() {
+                    window.open("http://places.singleplatform.com/countryside-donut-house/menu?ref=google");
+                }
+            </script>
+
         </div>
-        <div class="grid-item sidenav">sidenav</div>
-        <div class="grid-item main">main</div>
-        <div class="grid-item main2">main2</div>
-        <div class="grid-item support1">Support Section 1</div>
-        <div class="grid-item support2">Support Section 2</div>
+
+        <div class="grid-item sidenav">
+            <img src="images/sidenav.PNG" alt="sidenav" width="190px" height="170px">
+            <p>
+                The garden strawberry (or simply strawberry; Fragaria × ananassa)[1] is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its
+            </p>
+        </div>
+
+        <div class="grid-item testimonial">
+            <h1>Testimonials</h1>
+            <table>
+                <tr>
+                    <p>
+                        "Best donuts in Snohomish County. My kids and I like to try donuts all over the place and these are by far our favorite. Their bars a fluffy and light and their blueberry glazed are special."
+                    </p>
+                    <p>
+                        - Brian H
+                    </p>
+                    <br>
+                </tr>
+
+                <tr>
+                    <p>
+                        "One of my goto's when I get off work and I'm getting some sweets for myself and for my family. Super friendly and polite. The apple fritters are the BEST!"
+                    </p>
+                    <p>
+                        - Phill U
+                    </p>
+                    <br>
+                </tr>
+
+                <tr>
+                    <p>
+                        "OMG the donuts are amazingly fluffy especially the crullers."
+                    </p>
+                    <p>
+                        - Dan S
+                    </p>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grid-item write">
+            <a href=" https://www.google.com/search?hl=en-US&gl=us&q=Countryside+Donut+LLC,+21919+66th+Ave+W+Ste+I,+Mountlake+Terrace,+WA+98043&ludocid=12278115281507218404&lsig=AB86z5WkoAF0jyQbatYG9-u63U7k#lrd=0x54901aa58b606653:0xaa64a0cbd98873e4,3 " target="_blank">
+            Review Us</a>
+
+        </div>
+
+        <div class="grid-item read">
+            <a href="https://www.google.com/search?hl=en-US&gl=us&q=Countryside+Donut+LLC,+21919+66th+Ave+W+Ste+I,+Mountlake+Terrace,+WA+98043&ludocid=12278115281507218404&lsig=AB86z5WkoAF0jyQbatYG9-u63U7k#lrd=0x54901aa58b606653:0xaa64a0cbd98873e4,1 " target="_blank">
+            Read Review</a>
+
+        </div>
+
+        <div class="grid-item gallery ">
+            <h1>Gallery</h1>
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/gallery1.jpg " alt="g1 " width="310px " height="300px ">
+                    </td>
+                    <td>
+                        <img src="images/gallery2.jpg " alt="g2 " width="315px " height="300px ">
+                    </td>
+
+                    <td>
+                        <img src="images/gallery3.jpeg " alt="g3 " width="315px " height="300px ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="images/gallery4.jpg " alt="g4 " width="310px " height="300px ">
+                    </td>
+                    <td>
+                        <img src="images/gallery5.jpeg " alt="g5 " width="315px " height="300px ">
+                    </td>
+                    <td>
+                        <img src="images/gallery6.jpeg " alt="g6 " width="315px " height="300px ">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grid-item sidenav2">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                The garden strawberry (or simply strawberry; Fragaria × ananassa)[1] is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its
+            </p>
+        </div>
+
+        <!--
+        <div class="grid-item support1 ">Support Section 1</div>
+        <div class="grid-item support2 ">Support Section 2</div>
+        -->
     </div>
 
 
