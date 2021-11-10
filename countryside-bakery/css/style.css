@@ -1,3 +1,33 @@
+p {
+    font-family: gimlet-display, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+h1 {
+    font-family: gimlet-display, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    font-family: gimlet-display, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+}
+
+button {
+    font-family: gimlet-display, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+}
+
 .nav {
     list-style-type: none;
     background-color: white;
@@ -59,11 +89,15 @@ in the grid cells (like text) and the sides of the cells*/
 .sidenav {
     grid-column: 1;
     grid-row: 4;
+    background-color: rgb(255, 226, 163);
+    color: rgb(77, 51, 47);
 }
 
 .testimonial {
     grid-column: 2/span 6;
     grid-row: 4;
+    background-color: rgb(77, 51, 47);
+    color: rgb(255, 226, 163)
 }
 
 .write {
@@ -80,11 +114,25 @@ in the grid cells (like text) and the sides of the cells*/
     grid-column: 2/span 6;
     grid-row: 6;
     width: "85.71%";
+    background-color: rgb(77, 51, 47);
+    color: rgb(255, 226, 163)
 }
 
 .sidenav2 {
     grid-column: 1;
     grid-row: 6;
+    background-color: rgb(255, 226, 163);
+    color: rgb(77, 51, 47);
+}
+
+.quote {
+    grid-column: 1/span7;
+    grid-row: 7;
+    background-color: rgb(243, 130, 85);
+    font-family: gimlet-display, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
 }
 
 
