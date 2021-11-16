@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countryside Donut LCC - Direction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zit4ida.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: 50% 50%;
+        }
+        
+        .polaroid {
+            width: 75%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 10px 10px;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <!--the space after grid-item indicates that tag used for multiple classes-->
+        <div class="grid-item navmenu">
+            <ul class="nav">
+                <li><img src="images/CD logo.PNG" alt="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="direction.html">Direction</a></li>
+            </ul>
+            <hr class="solid1">
+        </div>
+
+        <div class="grid-item address">
+            <p>21919 66th Avenue West Suite i Mountlake Terrace, WA 98043</p>
+        </div>
+
+        <div class="grid-item map">
+            <img src="images/map.PNG" alt="map" style="width:65%; height:70%">
+            <br>
+            <br>
+            <button onclick="myFunction()">View on Google Map</button>
+            <script>
+                function myFunction() {
+                    window.open("https://www.google.com/maps/dir//Countryside+Donut+LLC/@47.799813,-122.3910703,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54901aa58b606653:0xaa64a0cbd98873e4!2m2!1d-122.3211591!2d47.799835");
+                }
+            </script>
+        </div>
+
+        <div class="grid-item location_name">
+            <h1>Our Other Locations</h1>
+            <hr class="solid2">
+        </div>
+        <div class="grid-item location1">
+            <div class="polaroid">
+                <img src="images/bothell.PNG" alt="bothell" style="width:70%; padding-top:15px">
+                <div class="container">10032 Main St Bothell, WA 98011</div>
+            </div>
+        </div>
+
+        <div class="grid-item location2">
+            <div class="polaroid">
+                <img src="images/kirkland.PNG" alt="kirkland" style="width:70%; height:70%; padding-top: 15px">
+                <div class="container">11613 124th Ave NE Kirkland, WA 98034</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -15,15 +15,12 @@
             height: "33%";
         }
         
-        button {
-            background-color: rgb(243, 130, 85);
-            border: none;
-            color: black;
-            padding: 20px 35px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            /*this is the gutters between grid gaps*/
+            padding: 10px;
+            grid-template-columns: auto 14.2857143% 14.2857143% 14.2857143% 14.2857143% 14.2857143% 14.2857143%;
         }
     </style>
 </head>
@@ -34,22 +31,24 @@
         <div class="grid-item navmenu">
             <ul class="nav">
                 <li><img src="images/CD logo.PNG" alt="logo"></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href=#>Contact</a></li>
-                <li><a href=#>Direction</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="direction.html">Direction</a></li>
             </ul>
-            <hr>
+            <hr class="solid1">
         </div>
 
-        <div class="grid-item main-image">
+        <div class="grid-item main-image polaroid">
             <img src="images/cd-main.PNG" alt="main" style="width:80%;height:90%">
-
+            <div class="container">
+                <p>Our Famous Donuts</p>
+                <br>
+            </div>
         </div>
 
         <div class="title" style="text-align:center;">
 
             <button onclick="myFunction()">Menu</button>
-
             <script>
                 function myFunction() {
                     window.open("http://places.singleplatform.com/countryside-donut-house/menu?ref=google");
@@ -59,15 +58,25 @@
         </div>
 
         <div class="grid-item sidenav">
-            <img src="images/sidenav.PNG" alt="sidenav" width="190px" height="170px">
-            <p>
-                The garden strawberry (or simply strawberry; Fragaria × ananassa)[1] is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its
-            </p>
+            <img src="images/sidenav2.PNG" alt="sidenav" width="190px" height="170px">
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href=" https://www.google.com/search?hl=en-US&gl=us&q=Countryside+Donut+LLC,+21919+66th+Ave+W+Ste+I,+Mountlake+Terrace,+WA+98043&ludocid=12278115281507218404&lsig=AB86z5WkoAF0jyQbatYG9-u63U7k#lrd=0x54901aa58b606653:0xaa64a0cbd98873e4,3 " target="_blank"
+                style="color: black">
+            Review Us</a>
+            <br>
+            <br>
+            <br>
+            <a href="https://www.google.com/search?hl=en-US&gl=us&q=Countryside+Donut+LLC,+21919+66th+Ave+W+Ste+I,+Mountlake+Terrace,+WA+98043&ludocid=12278115281507218404&lsig=AB86z5WkoAF0jyQbatYG9-u63U7k#lrd=0x54901aa58b606653:0xaa64a0cbd98873e4,1 " target="_blank"
+                style="color: black">
+            Read Review</a>
         </div>
 
         <div class="grid-item testimonial">
             <h1 style="color:rgb(255, 226, 163)">Testimonials</h1>
-            <hr>
+            <hr class="solid2">
             <table>
                 <tr>
                     <p>
@@ -100,26 +109,10 @@
             </table>
         </div>
 
-        <div class="grid-item write">
-            <a href=" https://www.google.com/search?hl=en-US&gl=us&q=Countryside+Donut+LLC,+21919+66th+Ave+W+Ste+I,+Mountlake+Terrace,+WA+98043&ludocid=12278115281507218404&lsig=AB86z5WkoAF0jyQbatYG9-u63U7k#lrd=0x54901aa58b606653:0xaa64a0cbd98873e4,3 " target="_blank"
-                style="background-color: rgb(243, 130, 85);
-            color: black">
-            Review Us</a>
-
-        </div>
-
-        <div class="grid-item read">
-            <a href="https://www.google.com/search?hl=en-US&gl=us&q=Countryside+Donut+LLC,+21919+66th+Ave+W+Ste+I,+Mountlake+Terrace,+WA+98043&ludocid=12278115281507218404&lsig=AB86z5WkoAF0jyQbatYG9-u63U7k#lrd=0x54901aa58b606653:0xaa64a0cbd98873e4,1 " target="_blank"
-                style="background-color: rgb(243, 130, 85);
-            color: black">
-            Read Review</a>
-
-        </div>
-
         <div class="grid-item gallery ">
             <h1>Gallery</h1>
-            <hr>
-            <table>
+            <hr class="solid2">
+            <table style="margin-left:auto; margin-right:auto">
                 <tr>
                     <td>
                         <img src="images/gallery1.jpg " alt="g1 " width="310px " height="300px ">
@@ -153,7 +146,7 @@
             <br>
             <br>
             <p>
-                The garden strawberry (or simply strawberry; Fragaria × ananassa)[1] is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its
+                Come and try out our very special donuts! If you are unsure, just check out our facebook page and read some reviews from our loyal customers!</p>
             </p>
         </div>
 

@@ -8,6 +8,18 @@ body {
     background-color: cornsilk;
 }
 
+.solid1 {
+    border-top: 3px solid rgb(243, 130, 85);
+}
+
+.solid2 {
+    border-top: 3px solid rgb(255, 226, 163);
+}
+
+.solid3 {
+    border-top: 3px solid black;
+}
+
 h1 {
     font-family: gimlet-display, serif;
     font-weight: 700;
@@ -26,6 +38,14 @@ button {
     font-weight: 700;
     font-style: italic;
     font-size: 20px;
+    background-color: rgb(243, 130, 85);
+    border: none;
+    color: black;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .nav {
@@ -48,16 +68,8 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-    background-color: rgb(13, 13, 65);
+    background-color: cornsilk;
     color: black;
-}
-
-.grid-container {
-    display: grid;
-    grid-gap: 10px;
-    /*this is the gutters between grid gaps*/
-    padding: 10px;
-    grid-template-columns: auto 14.2857143% 14.2857143% 14.2857143% 14.2857143% 14.2857143% 14.2857143%;
 }
 
 
@@ -82,8 +94,20 @@ in the grid cells (like text) and the sides of the cells*/
 }
 
 .main-image {
-    grid-column: 1/span 7;
+    grid-column: 2/span 5;
     grid-row: 3;
+}
+
+.polaroid {
+    width: 95%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 5px 5px;
 }
 
 .sidenav {
@@ -136,22 +160,66 @@ in the grid cells (like text) and the sides of the cells*/
 }
 
 
-/*
+/* CONTACT PAGE CSS*/
 
+.about {
+    grid-column: 1/span3;
+    grid-row: 2;
+    background-color: rgb(243, 130, 85);
+}
 
+.covid {
+    grid-column: 1/span3;
+    grid-row: 3;
+    background-color: rgb(77, 51, 47);
+    color: rgb(255, 226, 163)
+}
 
+.images {
+    grid-column: 1/span3;
+    grid-row: 4;
+}
 
-
-
-.support1 {
+.hours {
     grid-column: 1;
-    grid-row: 4/span 1;
-    background-color: mistyrose;
+    grid-row: 5;
+    background-color: white;
 }
 
-.support2 {
-    grid-column: 2;
-    grid-row: 4/span 1;
-    background-color: mistyrose;
+.contacts {
+    grid-column: 2/span2;
+    grid-row: 5;
+    background-color: rgb(77, 51, 47);
+    color: rgb(255, 226, 163)
 }
-*/
+
+
+/* DIRECTIONS PAGE CSS*/
+
+.address {
+    grid-column: 1/span2;
+    grid-row: 2;
+    background-color: rgb(243, 130, 85);
+}
+
+.map {
+    grid-column: 1/span2;
+    grid-row: 3;
+}
+
+.location_name {
+    grid-column: 1/span2;
+    grid-row: 4;
+    background-color: rgb(77, 51, 47);
+    color: rgb(255, 226, 163)
+}
+
+.location1 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.location2 {
+    grid-column: 2;
+    grid-row: 5;
+}
